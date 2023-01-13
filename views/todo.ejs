@@ -1,0 +1,16 @@
+<%-include("header")-%>
+<body class="container-fluid" style="background-color: rgb(43, 104, 236);">
+    <h1 style="font-weight: bolder; font-family: sans-serif;font-style: italic;color: rgb(212, 55, 55)"><%=data %></h1>
+    <ul style="font-style: italic; font-family: sans-serif;font-weight: bold;color: goldenrod;">
+    <% task.forEach(function(task){%>
+        <li><%=task.name %></li>
+        
+    <% }) %>
+    </ul>
+    <form  action="/" method="post">
+        <input type="text" name="n1" placeholder="add task" style="font-style: italic;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" >
+        <button name="btn4" type="submit" class="btn btn-md" value =<%=data%> style="background-color: antiquewhite;border-color: gold;height: 2rem;font-style: italic;font-family: sans-serif;">add task</button>
+    </form>
+    
+</body>
+</html>
